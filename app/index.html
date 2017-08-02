@@ -12,29 +12,36 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <a href="#" class="toggle">
-        <i class="fa fa-reorder"></i>
-      </a>
-      <a href="#" class="brand">
-        <img src="img/logo.png" alt="">
-      </a>
-      <div class="left">
-        <a href="#" class="link">Link</a>
-        <a href="#" class="link">Link</a>
-        <a href="#" class="link">Link</a>
-        <a href="#" class="link">Link</a>
-      </div>
-      <div class="right">
-        <a href="#" class="link">Link</a>
-      </div>
-    </nav>
+    <div class="nav-wrap">
+
+      <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+
+      <a href="#" id="menu-icon"><i class="fa fa-reorder"></i> Menu</a>
+
+      <nav class="navbar">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
-  <script
-    src="http://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-<script src="js/custom.min.js"></script>
+  <div id="map"></div>
+
+  <section class="services-wrap">
+    <h2 class="title">Select your repair</h2>
+    <div class="phone"><img src="img/phone.png" alt=""></div>
+  </section>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnbMYXc1B-w8I7CdKn9oIhVeflU4741SE&callback=initMap">
+  </script>
+  <script src="js/custom.min.js"></script>
+  <script src="js/maps.min.js"></script>
 </body>
 </html>

@@ -1,3 +1,6 @@
-$(".toggle").on("click", function() {
-  $(".toggle").parent().toggleClass('active');
+$(document).ready(function(){
+  $('#menu-icon').on('click', function(){
+    $('.navbar').toggleClass('expand');
+    return false;
+  });
 });

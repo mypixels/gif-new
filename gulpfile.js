@@ -7,7 +7,6 @@ const gulp                = require('gulp'),
       rename              = require('gulp-rename'),
       uglify              = require('gulp-uglify'),
       useref              = require('gulp-useref'),
-      uncss               = require('gulp-uncss'),
       sourcemaps          = require('gulp-sourcemaps'),
       browserSync         = require('browser-sync').create();
 
@@ -17,24 +16,6 @@ gulp.task('css', function() {
   .pipe(sourcemaps.init())
   .pipe(plumber())
   .pipe(sass({outputStyle: 'compressed'}))
-  .pipe(autoprefixer({
-    browsers: ['last 2 versions']
-  }))
-  .pipe(rename({suffix: '.min'}))
-  .pipe(sourcemaps.write('./source-maps'))
-  .pipe(gulp.dest('app/css'))
-  .pipe(browserSync.stream())
-});
-
-// UNCSS Task
-gulp.task('css', function() {
-  return gulp.src('app/sass/**/*.scss')
-  .pipe(sourcemaps.init())
-  .pipe(plumber())
-  .pipe(sass({outputStyle: 'compressed'}))
-  .pipe(uncss({
-    html: ['app/index.html', 'app/pages/**/*.html']
-  }))
   .pipe(autoprefixer({
     browsers: ['last 2 versions']
   }))
