@@ -1,0 +1,62 @@
+header
+  padding: 1em
+
+  .navbar
+    background-color: $white
+
+    .toggle, .brand
+      display: inline-block
+
+    .link
+      display: block
+      width: 100%
+      text-align: center
+      text-decoration: none
+      color: $default-text-color
+
+      &:hover, &:active
+        background: $black
+
+    .brand
+      width: 5em
+      text-align: center
+
+      img
+        width: 4em
+        vertical-align: middle
+
+    .toggle
+      padding: 1em
+      vertical-align: middle
+
+@media (min-width: 48em)
+  .navbar
+    display: flex
+
+    .left, .right
+      display: flex
+      flex: 1
+
+    .link
+      width: auto
+
+    .right
+      justify-content: flex-end
+
+    .toggle
+      display: none
+
+.navbar
+  div
+    display: none
+    @media (min-width: 48em)
+      display: flex
+
+@media (min-width: 48em)
+  .navabr.active
+    .toggle
+      background: blue
+      color: white
+
+    div
+      display: block
