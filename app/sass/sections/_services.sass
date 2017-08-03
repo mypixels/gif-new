@@ -8,3 +8,34 @@
   .title
     text-align: center
     flex-basis: 100%
+
+  .phone-wrap
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    width: 100%
+
+    .service-img
+      height: auto
+      text-align: center
+
+      img
+        width: 100%
+        margin-bottom: 3em
+        transition: width .2s ease-out
+
+        &.active-img
+          width: 30%
+
+  .price-find-wrap
+    display: none
+    flex-direction: column
+    width: 100%
+    margin-bottom: 2em
+    padding: 0 10%
+
+    input
+      width: 100%
+
+  .price-active
+    display: flex
