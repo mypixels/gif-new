@@ -7,13 +7,23 @@ header
   height: 50px
   line-height: 50px
   box-shadow: 0 -3px 0 darken($white, 10%) inset
+  z-index: 2
 
   .nav-wrap
     max-width: 960px
     margin: 0 auto
 
+    @include tablet
+      padding-left: 1em
+      padding-right: 1em
+      display: flex
+
     .logo
       padding-left: 1em
+
+      @include tablet
+        padding-left: 0
+        display: inline-block
 
       img
         width: 50px
@@ -29,6 +39,9 @@ header
       opacity: 1
       padding: 0 .4em
 
+      @include tablet
+        display: none
+
       &:hover
         opacity: 0.85
         border: none
@@ -40,6 +53,13 @@ header
       overflow: hidden
       transition: max-height .4s
 
+      @include tablet
+        display: flex
+        flex-direction: row
+        width: 100%
+        max-height: 46px
+        justify-content: flex-end
+
       .menu
         margin: 0
         padding: 0
@@ -48,6 +68,9 @@ header
         li
           list-style-type: none
           display: block
+
+          @include tablet
+            display: inline-block
 
           a
             display: block
@@ -61,14 +84,3 @@ header
 
     .expand
       max-height: 20em
-
-@media only screen and (min-width: 768px)
-  .wrap
-    padding-left: 1em
-    padding-right: 1em
-
-    .logo
-      margin-left: 0
-
-    .logo, .navbar
-      display: inline-block

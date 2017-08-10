@@ -20,10 +20,10 @@
 
       <nav class="navbar">
         <ul class="menu">
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
         </ul>
       </nav>
 
@@ -39,19 +39,58 @@
         <img class="phone-img" src="img/phone.png" alt="">
       </div>
       <div class="price-find-wrap">
-        <input type="text" placeholder="Phone">
-        <input type="text" placeholder="Model">
-        <input type="text" placeholder="Fault">
-      </div>
-    </div> <!-- End phone-wrap-->
-    <div class="phone-wrap">
-      <div class="service-img">
-        <img class="phone-img" src="img/phone.png" alt="">
-      </div>
-      <div class="price-find-wrap">
-        <input type="text" placeholder="Phone">
-        <input type="text" placeholder="Model">
-        <input type="text" placeholder="Fault">
+
+        <select name="phone-type" id="phone-type">
+          <option value="default-phone">Select Phone</option>
+          <option value="iphone">iPhone</option>
+          <option value="samsung">Samsung</option>
+          <option value="hauwei">Hauwei</option>
+          <option value="nokia">Nokia</option>
+        </select>
+
+        <select name="default-phone-model" id="default-phone-model">
+          <option value="default-phone-model">Select Model</option>
+        </select>
+
+        <select name="iphone-model" id="iphone-model" class="hide-select">
+          <option value="iphone-5">iPhone 5 / 5S / 5C</option>
+          <option value="iphone-6">iPhone 6</option>
+          <option value="iphone-6s">iPhone 6S</option>
+          <option value="iphone-6splus">iPhone 6S+</option>
+          <option value="iphone-6plus">iPhone 6+</option>
+          <option value="iphone-7">iPhone 7</option>
+        </select>
+        </select>
+
+        <select name="samsung-model" id="samsung-model" class="hide-select">
+          <option value="iphone-5">Samsung</option>
+          <option value="iphone-6">iPhone 6</option>
+          <option value="iphone-6s">iPhone 6S</option>
+          <option value="iphone-6splus">iPhone 6S+</option>
+          <option value="iphone-6plus">iPhone 6+</option>
+          <option value="iphone-7">iPhone 7</option>
+        </select>
+        </select>
+
+        <select name="hauwei-model" id="hauwei-model" class="hide-select">
+          <option value="iphone-5">Hauwei</option>
+          <option value="iphone-6">iPhone 6</option>
+          <option value="iphone-6s">iPhone 6S</option>
+          <option value="iphone-6splus">iPhone 6S+</option>
+          <option value="iphone-6plus">iPhone 6+</option>
+          <option value="iphone-7">iPhone 7</option>
+        </select>
+        </select>
+
+        <select name="nokia-model" id="nokia-model" class="hide-select">
+          <option value="iphone-5">Nokia</option>
+          <option value="iphone-6">iPhone 6</option>
+          <option value="iphone-6s">iPhone 6S</option>
+          <option value="iphone-6splus">iPhone 6S+</option>
+          <option value="iphone-6plus">iPhone 6+</option>
+          <option value="iphone-7">iPhone 7</option>
+        </select>
+
       </div>
     </div> <!-- End phone-wrap-->
   </section>

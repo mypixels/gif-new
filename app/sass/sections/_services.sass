@@ -28,14 +28,25 @@
           width: 30%
 
   .price-find-wrap
-    display: none
+    display: flex
     flex-direction: column
     width: 100%
     margin-bottom: 2em
     padding: 0 10%
 
-    input
+    select
       width: 100%
+      background-color: $white
+      padding: 1em 0
+      border: none
+      border-bottom: 1px solid $gif-red
 
-  .price-active
-    display: flex
+
+      &:focus
+        outline: none
+
+    .hide-select
+      display: none
+
+    .show-select
+      display: flex
