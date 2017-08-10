@@ -19,64 +19,64 @@ $('#phone-type').change(function() {
 
   switch(elementValue ){
     case 'iphone':
-      setElementVisibility($('#default-phone-model'), false);
-      setElementVisibility($('#iphone-phone-model'), true);
-      setElementVisibility($('#samsung-phone-model'), false);
-      setElementVisibility($('#huawei-phone-model'), false);
-      setElementVisibility($('#nokia-phone-model'), false);
+      setElementVisibility($('#default-model'), false);
+      setElementVisibility($('#iphone-model'), true);
+      setElementVisibility($('#samsung-model'), false);
+      setElementVisibility($('#huawei-model'), false);
+      setElementVisibility($('#nokia-model'), false);
 
-      // $('#default-phone-model').addClass('hide-select');
+      // $('#default-model').addClass('hide-select');
       // $('#iphone-model').removeClass('hide-select');
       // $('#samsung-model').addClass('hide-select');
       // $('#huawei-model').addClass('hide-select');
       // $('#nokia-model').addClass('hide-select');
       break;
     case 'samsung':
-      setElementVisibility($('#default-phone-model'), false);
-      setElementVisibility($('#iphone-phone-model'), false);
-      setElementVisibility($('#samsung-phone-model'), true);
-      setElementVisibility($('#huawei-phone-model'), false);
-      setElementVisibility($('#nokia-phone-model'), false);
+      setElementVisibility($('#default-model'), false);
+      setElementVisibility($('#iphone-model'), false);
+      setElementVisibility($('#samsung-model'), true);
+      setElementVisibility($('#huawei-model'), false);
+      setElementVisibility($('#nokia-model'), false);
 
-      // $('#default-phone-model').addClass('hide-select');
+      // $('#default-model').addClass('hide-select');
       // $('#iphone-model').addClass('hide-select');
       // $('#samsung-model').removeClass('hide-select');
       // $('#huawei-model').addClass('hide-select');
       // $('#nokia-model').addClass('hide-select');
       break;
     case 'huawei':
-      setElementVisibility($('#default-phone-model'), false);
-      setElementVisibility($('#iphone-phone-model'), false);
-      setElementVisibility($('#samsung-phone-model'), false);
-      setElementVisibility($('#huawei-phone-model'), true);
-      setElementVisibility($('#nokia-phone-model'), false);
+      setElementVisibility($('#default-model'), false);
+      setElementVisibility($('#iphone-model'), false);
+      setElementVisibility($('#samsung-model'), false);
+      setElementVisibility($('#huawei-model'), true);
+      setElementVisibility($('#nokia-model'), false);
 
-      // $('#default-phone-model').addClass('hide-select');
+      // $('#default-model').addClass('hide-select');
       // $('#iphone-model').addClass('hide-select');
       // $('#samsung-model').addClass('hide-select');
       // $('#huawei-model').removeClass('hide-select');
       // $('#nokia-model').addClass('hide-select');
       break;
     case 'nokia':
-      setElementVisibility($('#default-phone-model'), false);
-      setElementVisibility($('#iphone-phone-model'), false);
-      setElementVisibility($('#samsung-phone-model'), false);
-      setElementVisibility($('#huawei-phone-model'), false);
-      setElementVisibility($('#nokia-phone-model'), true);
-      // $('#default-phone-model').addClass('hide-select');
+      setElementVisibility($('#default-model'), false);
+      setElementVisibility($('#iphone-model'), false);
+      setElementVisibility($('#samsung-model'), false);
+      setElementVisibility($('#huawei-model'), false);
+      setElementVisibility($('#nokia-model'), true);
+      // $('#default-model').addClass('hide-select');
       // $('#iphone-model').addClass('hide-select');
       // $('#samsung-model').addClass('hide-select');
       // $('#huawei-model').addClass('hide-select');
       // $('#nokia-model').removeClass('hide-select');
       break;
     default:
-      setElementVisibility($('#default-phone-model'), true);
-      setElementVisibility($('#iphone-phone-model'), false);
-      setElementVisibility($('#samsung-phone-model'), false);
-      setElementVisibility($('#huawei-phone-model'), false);
-      setElementVisibility($('#nokia-phone-model'), false);
+      setElementVisibility($('#default-model'), true);
+      setElementVisibility($('#iphone-model'), false);
+      setElementVisibility($('#samsung-model'), false);
+      setElementVisibility($('#huawei-model'), false);
+      setElementVisibility($('#nokia-model'), false);
 
-      // $('#default-phone-model').removeClass('hide-select');
+      // $('#default-model').removeClass('hide-select');
       // $('#iphone-model').addClass('hide-select');
       // $('#samsung-model').addClass('hide-select');
       // $('#huawei-model').addClass('hide-select');
@@ -86,7 +86,7 @@ $('#phone-type').change(function() {
 });
 
 function setElementVisibility(element, visible){
-  if(visible)){
+  if(visible){
     element.removeClass('hide-select');
     element.addClass('show-select');
   }
