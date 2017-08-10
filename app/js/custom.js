@@ -17,7 +17,7 @@ $('#phone-type').change(function() {
   var element = $(this),
       elementValue = element.val();
 
-  switch(elementValue ){
+  switch(elementValue){
     case 'iphone':
       showPhoneModel("iphone-model");
       break;
@@ -37,9 +37,20 @@ $('#phone-type').change(function() {
 });
 
 function showPhoneModel(visiblePhoneModelId){
-  var modelIds = ['default-model', 'iphone-model', 'samsung-model', 'huawei-model', 'nokia-model'];
-  modelIds .forEach(function(id) {
+  var modelIds = ['default-phone-model', 'iphone-model', 'samsung-model', 'huawei-model', 'nokia-model'];
+  modelIds.forEach(function(id) {
     var visible = (id === visiblePhoneModelId);
     setElementVisibility($('#' + id), visible);
   });
+};
+
+function setElementVisibility(element, visible){
+  if(visible){
+    element.removeClass('hide-select');
+    element.addClass('show-select');
+  }
+  else{
+    element.addClass('hide-select');
+    element.removeClass('show-select');
+  }
 };
